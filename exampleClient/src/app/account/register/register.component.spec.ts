@@ -26,8 +26,6 @@ describe('RegisterComponent', () => {
     lastname: 'lastname1',
     confirmPassword: 'password1',
     password: 'password1',
-    triggerGroup: 'triggerGroup1',
-    triggerName: 'triggerName1',
     username: 'username1',
   };
 

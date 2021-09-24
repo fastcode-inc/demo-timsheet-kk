@@ -22,8 +22,6 @@ describe('UpdateProfileComponent', () => {
     firstname: 'firstname1',
     joinDate: d,
     lastname: 'lastname1',
-    triggerGroup: 'triggerGroup1',
-    triggerName: 'triggerName1',
     username: 'username1',
   };
 

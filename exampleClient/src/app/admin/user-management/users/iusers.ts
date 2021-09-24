@@ -7,7 +7,5 @@ export interface IUsers {
   joinDate?: Date;
   lastname?: string;
   password?: string;
-  triggerGroup?: string;
-  triggerName?: string;
   username?: string;
 }

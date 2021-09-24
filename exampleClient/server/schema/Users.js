@@ -215,16 +215,6 @@ cube(`Users`, {
       type: `string`
     },
     
-    triggerName: {
-      sql: `trigger_name`,
-      type: `string`
-    },
-    
-    triggerGroup: {
-      sql: `trigger_group`,
-      type: `string`
-    },
-    
     joinDate: {
       sql: `join_date`,
       type: `time`

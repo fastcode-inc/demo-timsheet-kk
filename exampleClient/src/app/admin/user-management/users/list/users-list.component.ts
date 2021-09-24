@@ -102,22 +102,6 @@ export class UsersListComponent extends BaseListComponent<IUsers> implements OnI
         type: ListColumnType.String,
       },
       {
-        column: 'triggerGroup',
-        searchColumn: 'triggerGroup',
-        label: 'trigger Group',
-        sort: true,
-        filter: true,
-        type: ListColumnType.String,
-      },
-      {
-        column: 'triggerName',
-        searchColumn: 'triggerName',
-        label: 'trigger Name',
-        sort: true,
-        filter: true,
-        type: ListColumnType.String,
-      },
-      {
         column: 'username',
         searchColumn: 'username',
         label: 'username',

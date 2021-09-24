@@ -42,10 +42,6 @@ export class RegisterComponent implements OnInit {
       confirmPassword: ['', Validators.required],
       password: ['', Validators.required],
 
-      triggerGroup: [''],
-
-      triggerName: [''],
-
       username: ['', Validators.required],
     });
   }

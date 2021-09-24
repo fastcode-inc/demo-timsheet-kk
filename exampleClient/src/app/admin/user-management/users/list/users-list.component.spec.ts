@@ -27,8 +27,6 @@ describe('UsersListComponent', () => {
       isemailconfirmed: true,
       joinDate: d,
       lastname: 'lastname1',
-      triggerGroup: 'triggerGroup1',
-      triggerName: 'triggerName1',
       username: 'username1',
     },
     {
@@ -39,8 +37,6 @@ describe('UsersListComponent', () => {
       isemailconfirmed: true,
       joinDate: d,
       lastname: 'lastname2',
-      triggerGroup: 'triggerGroup2',
-      triggerName: 'triggerName2',
       username: 'username2',
     },
   ];

@@ -54,8 +54,6 @@ export class UpdateProfileComponent implements OnInit {
       firstname: ['', Validators.required],
       joinDate: [''],
       lastname: ['', Validators.required],
-      triggerGroup: [''],
-      triggerName: [''],
       username: ['', Validators.required],
     });
   }

@@ -54,8 +54,6 @@ describe('EntityHistoryComponent', () => {
       joinDate: new Date(),
       lastname: 'lastname1',
       password: 'password1',
-      triggerGroup: 'triggerGroup1',
-      triggerName: 'triggerName1',
       username: 'username1',
     },
   ];

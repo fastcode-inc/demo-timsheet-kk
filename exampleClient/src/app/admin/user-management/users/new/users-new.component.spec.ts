@@ -28,8 +28,6 @@ describe('UsersNewComponent', () => {
     joinDate: d,
     lastname: 'lastname1',
     password: 'password1',
-    triggerGroup: 'triggerGroup1',
-    triggerName: 'triggerName1',
     username: 'username1',
     confirmPassword: 'password1',
     ...relationData,

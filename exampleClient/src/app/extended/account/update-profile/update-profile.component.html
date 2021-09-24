@@ -43,14 +43,6 @@
             </mat-form-field>
 
             <mat-form-field>
-              <input formControlName="triggerGroup" matInput placeholder="Enter triggerGroup" />
-            </mat-form-field>
-
-            <mat-form-field>
-              <input formControlName="triggerName" matInput placeholder="Enter triggerName" />
-            </mat-form-field>
-
-            <mat-form-field>
               <input formControlName="username" matInput placeholder="Enter username" />
               <mat-error *ngIf="!userForm.get('username').valid && userForm.get('username').touched">{{
                 'GENERAL.ERRORS.REQUIRED' | translate

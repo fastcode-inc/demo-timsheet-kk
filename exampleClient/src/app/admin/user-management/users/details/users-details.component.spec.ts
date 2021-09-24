@@ -28,8 +28,6 @@ describe('UsersDetailsComponent', () => {
     isemailconfirmed: true,
     joinDate: d,
     lastname: 'lastname1',
-    triggerGroup: 'triggerGroup1',
-    triggerName: 'triggerName1',
     username: 'username1',
     ...relationData,
   };
