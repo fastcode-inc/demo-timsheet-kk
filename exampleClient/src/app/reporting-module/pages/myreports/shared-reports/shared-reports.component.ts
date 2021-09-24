@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ReportService } from 'src/app/reporting-module/pages/myreports/report.service';
 import { IReport } from 'src/app/reporting-module/pages/myreports/ireport';
-import { ErrorService, listProcessingType, ConfirmDialogComponent } from 'src/app/common/shared';
+import { listProcessingType, ConfirmDialogComponent } from 'src/app/common/shared';
 import { take } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
-import { MatSnackBar, MatDialogRef, MatDialog } from '@angular/material';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { ErrorService } from 'src/app/core/services/error.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 export interface PeriodicElement {
   Title: string;

@@ -1,10 +1,12 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ReportPasswordComponent } from '../myreports/report-password/report-password.component';
-import { Globals, ErrorService } from 'src/app/common/shared';
 import { IPermalink } from '../permalink/ipermalink';
 import { PermalinkService } from '../permalink/permalink.service';
-import { MAT_DIALOG_DATA, MatSnackBar, MatDialog, MatDialogRef } from '@angular/material';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { TranslateService } from '@ngx-translate/core';
+import { Globals } from 'src/app/core/services/globals';
+import { ErrorService } from 'src/app/core/services/error.service';
 
 export enum AccessOptions {
   Login = 'Login',

@@ -30,6 +30,8 @@ import { SharedModule } from 'src/app/common/shared';
 import { CoreExtendedModule } from './extended/core/core.module';
 import { GeneralComponentsExtendedModule } from './extended/common/general-components/general-extended.module';
 import { environment } from 'src/environments/environment';
+import { DemoComponent } from './demo/demo.component';
+import { MatStepperModule } from '@angular/material/stepper';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -43,7 +45,7 @@ const cubejsOptions = {
 };
 
 @NgModule({
-  declarations: [ErrorPageComponent, SwaggerComponent, AppComponent, ResourceViewComponent],
+  declarations: [ErrorPageComponent, SwaggerComponent, AppComponent, ResourceViewComponent, DemoComponent],
   imports: [
     BrowserModule,
     routingModule,
@@ -61,6 +63,7 @@ const cubejsOptions = {
       },
     }),
     CubejsClientModule.forRoot(cubejsOptions),
+    MatStepperModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

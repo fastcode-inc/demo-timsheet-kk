@@ -24,7 +24,7 @@ import { sharingType } from '../share/ishare-config';
 import { ShareComponent } from '../share/share.component';
 import { ReportPasswordComponent } from './report-password/report-password.component';
 import { PermalinkComponent } from '../permalink/permalink.component';
-import { AuthenticationService } from 'src/app/core/authentication.service';
+import { AuthenticationService } from 'src/app/core/services/authentication.service';
 import { Observable, ReplaySubject } from 'rxjs';
 
 import { UsersExtendedService } from 'src/app/extended/admin/user-management/users/index';

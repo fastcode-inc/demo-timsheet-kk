@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MatDialog, MatDialogRef, MatSnackBar } from '@angular/material';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { MainService } from '../../../services/main.service';
 import { DashboardService } from '../dashboard.service';
 import { IDashboard } from '../idashboard';
 import { take } from 'rxjs/operators';
-import { ErrorService, ConfirmDialogComponent } from 'src/app/common/shared';
+import { ConfirmDialogComponent } from 'src/app/common/shared';
+import { ErrorService } from 'src/app/core/services/error.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

@@ -1,0 +1,154 @@
+<mat-stepper id="1632411094941" class="stepper-1632414938276" color="accent" orientation="horizontal">
+  <mat-step id="1632411094943" editable="true" [stepControl]="step1632411094943" label="Contact Information">
+
+
+    <form class="form-1632414938078 " [formGroup]="step1632411094943" id="1632411094945" fxLayout="column "
+      fxLayout.lg="column " fxLayout.xl="column " fxLayoutAlign="start start" name="step1632411094943">
+      <mat-form-field class="input-1632414937649 " id="1632411303831" floatLabel="auto" color="primary"
+        appearance="legacy">
+        <mat-label>Name (First, MI, Last)</mat-label>
+        <input matInput placeholder="Username" formControlName="input1632411303831" dir="ltr" type="text" required>
+        <mat-error *ngIf="step1632411094943.controls.input1632411303831.hasError('required')">
+
+
+          Field is required
+
+
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="input-1632414937939 " id="1632411477506" floatLabel="auto" color="primary"
+        appearance="legacy">
+        <mat-label>Address</mat-label>
+        <input matInput placeholder="Username" formControlName="input1632411477506" dir="ltr" type="text" required>
+        <mat-error *ngIf="step1632411094943.controls.input1632411477506.hasError('required')">
+
+
+          Field is required
+
+
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="input-1632414937958 " id="1632411496965" floatLabel="auto" color="primary"
+        appearance="legacy">
+        <mat-label>City</mat-label>
+        <input matInput placeholder="Username" formControlName="input1632411496965" dir="ltr" type="text" required>
+        <mat-error *ngIf="step1632411094943.controls.input1632411496965.hasError('required')">
+
+
+          Field is required
+
+
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="select-1632414937973 " id="1632411587486" fxFlex="0" hideRequiredMarker="false"
+        appearance="legacy">
+        <mat-label>State</mat-label>
+        <mat-select formControlName="select1632411587486" required="true">
+          <mat-option *ngFor="let state of states" [value]="state.id">{{state.name}}</mat-option>
+        </mat-select>
+        <mat-error *ngIf="step1632411094943.controls.select1632411587486.hasError('required')">
+
+
+          Field is required
+
+
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="input-1632414937991 " id="1632411636945" floatLabel="auto" color="primary"
+        appearance="legacy">
+        <mat-label>Zip Code</mat-label>
+        <input matInput placeholder="Username" formControlName="input1632411636945" dir="ltr" type="text" required>
+        <mat-error *ngIf="step1632411094943.controls.input1632411636945.hasError('required')">
+
+
+          Field is required
+
+
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="input-1632414938008 " id="1632411667170" floatLabel="auto" color="primary"
+        appearance="legacy">
+        <mat-label>Daytime Phone Number</mat-label>
+        <input matInput placeholder="Username" formControlName="input1632411667170" dir="ltr" type="text" required>
+        <mat-error *ngIf="step1632411094943.controls.input1632411667170.hasError('required')">
+
+
+          Field is required
+
+
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="input-1632414938027 " id="1632411730095" floatLabel="auto" color="primary"
+        appearance="legacy">
+        <mat-label>Fax Number</mat-label>
+        <input matInput placeholder="Username" formControlName="input1632411730095" dir="ltr" type="text">
+      </mat-form-field>
+      <mat-form-field class="input-1632414938040 " id="1632411759838" floatLabel="auto" color="primary"
+        appearance="legacy">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Username" formControlName="input1632411759838" dir="ltr" type="text">
+      </mat-form-field>
+      <div class="flexLayout-1632414938073" id="1632411271963" fxLayout="row " fxLayoutAlign="center start"
+        fxFlex="100">
+        <button type="button" class="button-1632414938070 " id="1632411296660" mat-raised-button matStepperNext
+          color="primary" fxFlexAlign="auto">
+
+          Next
+        </button></div>
+    </form>
+
+
+
+
+
+  </mat-step>
+  <mat-step id="1632412188923" [stepControl]="step1632412188923" label="Documents">
+
+
+    <form class="form-1632414938265 " [formGroup]="step1632412188923" id="1632412188925" fxLayout="column "
+      fxLayout.lg="column " fxLayoutAlign="start start" name="step1632412188923">
+      <mat-form-field class="textArea-1632414938194 " fxFlex="0" id="1632412248896" 
+        appearance="legacy" hideRequiredMarker="false">
+        <mat-label>Enter company name, address, and any other information relevant to the request</mat-label>
+        <textarea matInput formControlName="textArea1632412248896" required cdkAutosizeMinRows="2"
+          cdkAutosizeMaxRows="2" cdkTextareaAutosize #autosize="cdkTextareaAutosize">
+        </textarea>
+        <mat-error *ngIf="step1632412188923.controls.textArea1632412248896.hasError('required')">
+
+
+          Field is required
+
+
+        </mat-error>
+      </mat-form-field>
+      <p id="1632412525785" class="p-1632414938208 " fxFlex="0">Select a suitable description of yourself and the
+        purpose of the request:*
+
+
+      </p>
+      <mat-radio-group class="radioButton-1632414938242 " id="1632412389239">
+        <mat-radio-button [value]="item['id']" *ngFor="let item of purposeOfRequestOptions">{{item['label']}}</mat-radio-button>
+      </mat-radio-group>
+
+      <mat-form-field class="select-1632414938258 " id="1632414736219" fxFlex="0" hideRequiredMarker="false"
+        appearance="legacy">
+        <mat-label>Enter the maximum amount that you are willing to pay</mat-label>
+        <mat-select formControlName="select1632414736219" required="true">
+          <mat-option *ngFor="let opt of processingFeesOptions" [value]="opt.id">{{opt.name}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div class="flexLayout-1632425701824" id="1632425701824" fxLayout="row" fxLayoutAlign="center start"
+        fxFlex="100">
+        <button type="button" class="button-1632425745154 " id="1632425745154" mat-raised-button color="primary"
+          fxFlexAlign="auto" (click)="save()">
+
+          Save
+        </button></div>
+    </form>
+
+
+
+
+
+  </mat-step>
+</mat-stepper>

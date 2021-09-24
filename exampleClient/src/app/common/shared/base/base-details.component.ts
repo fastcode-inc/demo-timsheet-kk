@@ -15,7 +15,6 @@ import { CanDeactivateGuard } from 'src/app/core/guards/can-deactivate.guard';
 import { ErrorService } from 'src/app/core/services/error.service';
 import { ServiceUtils } from '../utils/serviceUtils';
 import { PickerComponent } from '../components/picker/picker.component';
-import { Field } from '..';
 
 @Component({
   template: '',
@@ -40,7 +39,7 @@ export class BaseDetailsComponent<E> implements OnInit, CanDeactivateGuard {
   childAssociations: IAssociationEntry[];
   parentAssociations: IAssociationEntry[];
 
-  fields: Field[] = [];
+  fields: any[] = [];
 
   dialogRef: MatDialogRef<any>;
   pickerDialogRef: MatDialogRef<PickerComponent>;

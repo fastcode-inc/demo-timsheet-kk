@@ -4,8 +4,10 @@ import { SwaggerComponent } from './core/swagger/swagger.component';
 import { ErrorPageComponent } from './core/error-page/error-page.component';
 import { AuthGuard } from './core/guards/auth.guard';
 import { ResourceViewComponent } from 'src/app/reporting-module/pages/resourceView/resourceView.component';
+import { DemoComponent } from './demo/demo.component';
 
-const routes: Routes = [
+const routes: Routes = [  
+  { path: 'demo', component: DemoComponent },
   { path: 'resourceView/:id', component: ResourceViewComponent },
   {
     path: '',

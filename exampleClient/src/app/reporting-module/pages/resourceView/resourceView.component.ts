@@ -3,7 +3,7 @@ import { AccessOptions } from '../myreports/myreports.component';
 import { AuthenticationService } from 'src/app/core/services/authentication.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ReportPasswordComponent } from '../myreports/report-password/report-password.component';
-import { MatDialog, MatDialogRef } from '@angular/material';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { ResourceViewService } from './resourceView.service';
 import * as _ from 'lodash';
 
