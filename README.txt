@@ -1,5 +1,5 @@
 
-#####PLEASE FOLLOW THE INSTRUCTIONS BELOW TO RUN AND LOGIN TO THE APPLICATION.#####
+#####PLEASE FOLLOW THE INSTRUCTIONS TO RUN AND LOGIN TO THE APPLICATION.#####
 
 
 1. Please ensure that you have DOCKER Desktop installed on your local machine. You can download and install it from the following location: https://www.docker.com/products/docker-desktop
