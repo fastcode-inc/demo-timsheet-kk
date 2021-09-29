@@ -14,7 +14,7 @@ Linux / Mac
 ===========
 ./install.sh
 
-This command will create three different containers with pre-installed dependencies and run the generated application. If you added the reporting add-on, the command will create four different containers.
+This command will create three containers with pre-installed dependencies and run the generated application. If you added the reporting add-on, the command will create four different containers.
 
 The front-end UI will run on port 4700 and the back-end API will run on port 5555.
 
